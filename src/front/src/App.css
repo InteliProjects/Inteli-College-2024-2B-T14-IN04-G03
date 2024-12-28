@@ -1,0 +1,249 @@
+/* Estilo da Navbar */
+.navbar {
+  display: flex;
+  align-items: center; /* Centraliza os itens verticalmente */
+  position: fixed; /* Fixa no topo da tela */
+  top: 0;
+  width: 100%; /* Ocupa toda a largura */
+  background-color: #fff; /* Cor branca */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.226); /* Sombra sutil */
+  z-index: 1000; /* Garante que fique sobre outros elementos */
+}
+
+/* Logo da Navbar */
+.navbar-logo .logo {
+  width: 30vh; /* Ajuste o tamanho da imagem */
+  height: auto; /* Ajuste o tamanho da imagem */
+  display: block; /* Garante que a imagem não desalinhe */
+}
+
+/* Links da Navbar */
+.navbar-links {
+  display: flex; /* Coloca os links lado a lado */
+  gap: 1rem; /* Espaço entre os links */
+  justify-content: flex-end; /* Alinha os links à direita */
+  flex-grow: 1; /* Garante que ocupem o espaço disponível */
+  margin-right: 3rem;
+}
+
+/* 🚀 NOVO - Aplicar estilo ao botão da Navbar */
+.navbar-links button {
+  background: none; /* Remove o fundo padrão do botão */
+  border: none; /* Remove a borda padrão do botão */
+  color: rgb(34, 34, 34); /* Cor padrão do botão */
+  font-size: 1.1rem; /* Tamanho da fonte */
+  font-weight: 500; /* Fonte em negrito */
+  font-family: 'Poppins'; /* Fonte */ 
+  transition: color 0.3s; /* Efeito suave ao passar o mouse */
+  cursor: pointer; /* Define o cursor de mãozinha */
+  text-decoration: none; /* Remove o sublinhado */
+  display: flex; /* Para alinhar o ícone e o texto */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza o conteúdo */
+}
+
+.navbar-links button:hover {
+  color: rgb(183, 29, 40); /* Cor ao passar o mouse */
+}
+
+/* 🚀 NOVO - Alinhamento correto dos ícones e texto */
+.navbar-links li {
+  display: inline; /* Garante que os itens fiquem na mesma linha */
+}
+
+.navbar-links a, 
+.navbar-links button {
+  text-decoration: none; /* Remove o sublinhado */
+  color: rgb(34, 34, 34); /* Cor padrão dos links */
+  font-size: 1.1rem; /* Tamanho da fonte */
+  font-weight: 500; /* Fonte em negrito */
+  font-family: 'Poppins'; /* Fonte */ 
+  transition: color 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+.navbar-links a:hover, 
+.navbar-links button:hover {
+  color: rgb(183, 29, 40); /* Cor ao passar o mouse */
+}
+
+
+
+/* Estilizando o fundo da tela */
+.App {
+  background-color: rgb(34, 34, 34); /* Fundo branco */
+  height: 100vh; /* Altura de toda a tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Container que centraliza os cards */
+.container {
+  display: flex;
+  flex-direction: column; /* Alinhar as linhas verticalmente */
+  gap: 5rem; /* Espaçamento entre as linhas */
+}
+
+/* Linha que agrupa dois cards */
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 5rem; /* Espaçamento horizontal entre os cards */
+}
+
+/* Estilizando os cards */
+.card {
+  background-color: rgb(183, 29, 40); /* Cor do card */
+  width: 22vw;
+  height: 21vh;
+  border-radius: 10px; /* Bordas arredondadas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
+  cursor: pointer;
+}
+/* Efeito de hover */
+.card:hover {
+  transform: scale(1.1); /* Aumenta o tamanho em 10% */
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2); /* Adiciona uma sombra */
+}
+
+.iconuser {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  color: white;
+}
+.cardtext {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+/* Tela de fundo do login */
+.login-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Preenche toda a altura da tela */
+  width: 100vw; /* Preenche toda a largura da tela */
+  background: linear-gradient(135deg, rgb(183, 29, 40), #340c0c); /* Fundo com gradiente */
+}
+
+/* Card de login */
+.login-card {
+  background-color: #fff; /* Fundo branco */
+  padding: 30px;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* Sombra */
+  width: 100%;
+  max-width: 400px; /* Largura máxima do card */
+  text-align: center;
+}
+
+/* Imagem no card de login */
+.login-image {
+  width: 100%; /* Ocupa a largura do card */
+  max-height: 150px; /* Define uma altura máxima */
+  object-fit: cover; /* Ajusta a imagem para caber no card sem distorção */
+  border-radius: 10px 10px 0 0; /* Bordas arredondadas no topo */
+  margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+
+/* Grupo de formulário */
+.form-group {
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botão de login */
+.button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color:  rgb(183, 29, 40);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color:  rgb(124, 19, 26);
+}
+/* Estilização do botão switch */
+.switch-container {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin: 5% 0; /* Espaçamento acima e abaixo */
+
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 10%;
+  height: 20%;
+  margin-right: 3%; /* Espaçamento ao lado do texto */
+}
+
+.switch input {
+  opacity: 0; /* Esconde o input padrão */
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Cor padrão do switch */
+  transition: 0.4s;
+  border-radius: 20px; /* Arredonda as bordas */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 70%;
+  width: 38%;
+  left: 7%;
+  bottom: 12%;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%; /* Arredonda o botão interno */
+}
+
+input:checked + .slider {
+  background-color: rgb(124, 19, 26); /* Cor quando o switch está ligado */
+}
+
+input:checked + .slider:before {
+  transform: translateX(120%); /* Move o botão interno */
+}
+
+.switch-label {
+  font-size: 1rem;
+  color: #555;
+}
